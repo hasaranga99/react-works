@@ -1,16 +1,37 @@
 import './App.css';
 import Main from './Components/Main';
 
+const myData = [
+  {
+    name : 'Ravindu',
+    city : 'medirigiriya',
+    Position : 'web development',
+  },
+  {
+    name : 'hasaranga',
+    city : 'colombo',
+    Position : 'Software engineer',
+  },
+  {
+    name : 'kavishka',
+    city : 'Polonnaruwa',
+    Position : 'React',
+  },
+  {
+    name : 'dilshan',
+    city : 'maharagama',
+    Position : 'node js',
+  },
+]
+
 function App() {
   return (
   <div>
     Hasaranga Learning center
     <h1>Ravindu Hasaranga</h1>
-    <Main/>
-    <Main>
-      
-      <h6>Ravindu Hasaramga</h6>
-    </Main>
+    {myData.map(({name,city,Position})=> {
+      return <Main name={name} city={city} Position={Position}/>;
+    })}
   </div>
   );
 }
