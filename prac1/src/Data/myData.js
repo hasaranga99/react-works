@@ -24,3 +24,5 @@ export const myData = [
     Position : 'node js',
   },
 ]
+
+export const myData2 = undefined
