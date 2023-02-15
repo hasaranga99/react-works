@@ -1,25 +1,16 @@
-// const name  = "Ravindu Hasaranga1"
-// const Position = "Web developer1"
+import { Fragment } from "react";
 
-// const myObj = {
-//   name: `${name}`,
-//   Position: `${Position}`,
-//   city: "Medirigiriya",
-
-// };
 
 function Main({name,city,Position}){
-    // const {city} = myObj;
+ 
   return (
-    <div>
-      This is Main Component
-      <ul>
-        <li>java</li>
-        <li>{city}</li>
-        <li>{name}</li>
-        <li>{Position}</li>
-      </ul>
-    </div>
+    <Fragment>
+      <img src="https://happygift.lk/wp-content/uploads/2021/06/orji-1-1-scaled.jpg" alt="CardImage"/>
+      <div>
+        <h3>{name}</h3>
+        <p><span>{city}</span><span>{Position}</span></p>
+      </div>
+    </Fragment>
 
   );
 }
