@@ -1,16 +1,21 @@
-import { Fragment } from "react";
 
-
-function Main({name,city,Position}){
+function Main({name,city,Position,image}){
  
   return (
-    <Fragment>
-      <img src="https://happygift.lk/wp-content/uploads/2021/06/orji-1-1-scaled.jpg" alt="CardImage"/>
-      <div>
-        <h3>{name}</h3>
-        <p><span>{city}</span><span>{Position}</span></p>
+    <div>
+      <img src={
+        image?`${image}`:`https://m.media-amazon.com/images/I/91gbfULvW0L._AC_SL1500_.jpg`
+      }
+      alt= "CardImag"
+      />
+      <div className="mainblock_details">
+        <h3>{!name? `no name`: `${name}`}</h3>
+        <p>
+          <span>{city}</span>
+          <span>{Position}</span>
+        </p>
       </div>
-    </Fragment>
+    </div>
 
   );
 }
