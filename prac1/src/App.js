@@ -5,8 +5,8 @@ import Main from "./Components/Main";
 import { myData } from "./Data/myData";
 
 function App() {
-  const MainBlock = myData.map(({ id, name, city, Position }) => {
-    return <Main key={id} name={name} city={city} Position={Position} />;
+  const MainBlock = myData.map(({ id, name, city, Position,image }) => {
+    return <Main key={id} name={name} city={city} Position={Position} image={image} />;
   });
   return (
     <div className="main_container">
